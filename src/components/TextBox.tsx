@@ -16,6 +16,7 @@ export const TextBox: React.FC<TextBoxProps> = ({ disabled, onChange, title, tex
       onChange={e => onChange(e.target.value)}
       value={text}
       disabled={disabled}
+      data-testid={title} // Being lazy with this
     />
   </div>
 );
